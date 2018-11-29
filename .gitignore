@@ -1,0 +1,41 @@
+### test ###
+**/screenshots
+**/videos
+errorShots
+
+### transpile ###
+lib
+
+### base ###
+# release folder
+dist
+
+# Logs
+logs
+*.log
+npm-debug.log*
+lerna-debug.log
+
+# editor files
+# https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+# User-specific stuff from JetBrains:
+.idea/*
+package-lock.json
+npm-shrinkwrap.json
+wallaby.conf.js
+
+# Runtime data
+pids
+*.pid
+
+# Dependency directories
+node_modules
+coverage
+.nyc_output
+
+# Storybook temp files
+.storybook
+!packages/tools/storybook/.storybook
+
+.DS_Store
+*.pem

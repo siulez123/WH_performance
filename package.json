@@ -1,0 +1,24 @@
+{
+  "name": "betslip-regression",
+  "version": "0.0.1",
+  "description": "William Hill betslip regression test project",
+  "main": "index.js",
+  "scripts": {
+    "test-desktop": "wdio wdio.conf.desktop.js",
+    "test-mobile": "wdio wdio.conf.mobile.js",
+    "test-bs": "wdio wdio.conf.browserstack.js",
+    "test-bs-desktop": "wdio wdio.conf.browserstack.parallel.desktop.js",
+    "test-bs-mobile": "wdio wdio.conf.browserstack.parallel.mobile.js",
+    "build": "babel --presets es2015 -d lib/ src",
+    "backoffice-runner": "yarn build && node lib/utils/back-office/automate.js"
+  },
+  "author": "dimitar.vladov@williamhill.com",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.1.2"
+  },
+  "scripts": {
+    "open": "./node_modules/.bin/cypress open"
+  }
+
+}
