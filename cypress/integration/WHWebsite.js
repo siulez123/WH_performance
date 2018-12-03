@@ -1,3 +1,12 @@
+
+function login(username, password) {
+  cy.get('#accountTabButton').click()
+  cy.get('#loginUsernameInput').type(username)
+  cy.get('#loginPasswordInput').type(password)
+  cy.get('#loginButton').click()
+  cy.wait(5000)
+}
+
 context('WilliamHill - Performance tests', () => {
   beforeEach(() => {  
     cy.visit('http://sports.williamhill-pp2.com/betting/en-gb')
